@@ -4,3 +4,4 @@
 DIR="$(cd "$(dirname "$0")" && pwd)"
 
 export $(grep -v '^#' $DIR/../.env | xargs)
+export WAITFORIT_TIMEOUT=1

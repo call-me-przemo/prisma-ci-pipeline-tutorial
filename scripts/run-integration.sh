@@ -9,3 +9,4 @@ if [ "$#" -eq  "0" ]
 else
     vitest -c ./vitest.config.integration.ts --ui
 fi
+docker compose down -t 0
