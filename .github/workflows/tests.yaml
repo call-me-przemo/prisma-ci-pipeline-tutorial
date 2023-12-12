@@ -22,3 +22,10 @@ jobs:
       - uses: ./.github/actions/build
       - name: Run tests
         run: pnpm run test:backend:int
+  e2e-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ./.github/actions/build
+      - name: Run tests
+        run: pnpm test:e2e
