@@ -3,19 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "prisma": {
+    "schema": "../prisma/schema.prisma"
+  },
   "scripts": {
     "test": "../scripts/run-e2e.sh",
-    "test:headed": "../scripts/run-e2e.sh"
+    "test:headed": "../scripts/run-e2e.sh --headed"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@faker-js/faker": "^8.3.1",
-    "@playwright/test": "^1.39.0",
-    "@types/node": "18.11.12"
+    "@faker-js/faker": "^7.6.0",
+    "@playwright/test": "^1.30.0"
   },
-  "prisma": {
-    "schema": "../prisma/schema.prisma"
+  "dependencies": {
+    "@types/node": "18.11.12",
+    "axios": "^1.3.0"
   }
 }

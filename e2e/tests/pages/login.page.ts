@@ -1,7 +1,11 @@
 import type { Page } from '@playwright/test'
 
 export class LoginPage {
-  constructor(readonly page: Page) {}
+  readonly page: Page
+
+  constructor(page: Page) {
+    this.page = page
+  }
 
   async goto() {
     await this.page.goto('http://localhost:5173/login')
